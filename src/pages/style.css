@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  h1:hover {
+    color: #ff6347; /* Coral color on hover */
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #333;
+  }
+  
+  
+  
+  td:active {
+    background-color: #ffa07a; /* Light Salmon on click */
+  }
+  
+  table, td {
+    border: 3px solid #4682b4; /* SteelBlue for border */
+  }
+  
+  .winner {
+    color: #32cd32; /* LimeGreen for winner text */
+    animation: winnerPulse 1s infinite alternate;
+  }
+  
+  @keyframes winnerPulse {
+    from {
+      color: #32cd32;
+    }
+    to {
+      color: #98fb98; /* LightGreen for animation */
+    }
+  }
+  
+  
